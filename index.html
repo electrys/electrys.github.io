@@ -3,36 +3,170 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
 <title>Dāvis Zavickis</title>
+<meta name="description" content="Dāvis Zavickis — physicist, University of Latvia">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
-<style>
-  :root { --ink: #1a1a1a; --muted: #6b6b6b; --bg: #fbfbf9; }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) { --ink: #ececec; --muted: #9a9a9a; --bg: #121212; }
-  }
-  html, body { height: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Source Serif 4", Georgia, serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-    box-sizing: border-box;
-  }
-  h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 .5rem; }
-  p { color: var(--muted); margin: 0; font-size: 1rem; }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Dāvis Zavickis</h1>
-    <p>Coming soon.</p>
-  </main>
+<main>
+
+  <img class="photo" src="photo.png" alt="Photo of Dāvis Zavickis">
+
+  <div class="meta">
+    <span class="meta-item">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      Riga, Latvia
+    </span>
+    <a class="meta-item" href="mailto:davis.zavickis@gmail.com" aria-label="Email Dāvis Zavickis">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
+      davis.zavickis@gmail.com
+    </a>
+  </div>
+
+  <h1>Dāvis Zavickis</h1>
+
+  <p>I am a research assistant and PhD candidate in physics at the University of Latvia, working on first-principles electronic-structure methods for density-functional theory calculations.</p>
+
+  <h2>Experience</h2>
+  <div class="experience">
+
+    <details class="exp-item">
+      <summary class="exp-summary">
+        <div class="exp-summary-row">
+          <span class="exp-summary-main">
+          <span class="exp-title">Research Assistant</span>
+          <span class="exp-org">University of Latvia &mdash; Faculty of Physics, Mathematics and Optometry</span>
+        </span>
+        <span class="exp-summary-right">
+          <span class="exp-dates">06/2021 &ndash; Present</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </span>
+        </div>
+      </summary>
+      <div class="exp-detail">
+        <ul>
+          <li>Development and implementation of novel first-principles methods in &ldquo;exciting,&rdquo; a full-potential all-electron density-functional-theory (DFT) software package employing linearised augmented plane waves (LAPW).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="exp-item">
+      <summary class="exp-summary">
+        <div class="exp-summary-row">
+          <span class="exp-summary-main">
+          <span class="exp-title">Engineer</span>
+          <span class="exp-org">Institute of Solid State Physics, University of Latvia &mdash; Laboratory of Kinetics in Self-Organizing Systems</span>
+        </span>
+        <span class="exp-summary-right">
+          <span class="exp-dates">03/2017 &ndash; 06/2021</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </span>
+        </div>
+      </summary>
+      <div class="exp-detail">
+        <ul>
+          <li>Kinetic Monte Carlo modelling of bimolecular processes in condensed-matter systems.</li>
+          <li>Electronic structure calculations using density-functional theory methods.</li>
+          <li>Theoretical prediction of novel materials for intermediate-temperature proton-conducting ceramic fuel cells.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="exp-item">
+      <summary class="exp-summary">
+        <div class="exp-summary-row">
+          <span class="exp-summary-main">
+          <span class="exp-title">Data Scientist</span>
+          <span class="exp-org">Latvian Environment, Geology and Meteorology Centre &mdash; Dept. of Climate and Numerical Modelling</span>
+        </span>
+        <span class="exp-summary-right">
+          <span class="exp-dates">02/2018 &ndash; 12/2021</span>
+          <span class="chevron" aria-hidden="true"></span>
+        </span>
+        </div>
+      </summary>
+      <div class="exp-detail">
+        <ul>
+          <li>Developed deterministic and ensemble weather-forecast post-processing methods and built the associated post-processing system.</li>
+          <li>Automated a range of operational products, including an alert system for hazardous weather conditions, data-aggregation procedures, and statistical data analysis.</li>
+        </ul>
+      </div>
+    </details>
+
+  </div>
+
+  <p>I received my BSc and MSc in physics, both with distinction, from the University of Latvia, including an exchange semester at Ume&aring; University, Sweden. My research interests include density-functional theory, electronic-structure methods, high-performance scientific computing, and statistical methods for environmental forecasting.</p>
+
+  <h2>Publications</h2>
+
+  <div class="entry">
+    <div class="year">2022</div>
+    <div>D. Zavickis, K. Kacars, J. Cimurs, A. Gulans, &ldquo;Adaptively compressed exchange in the linearized augmented plane wave formalism,&rdquo; <em>Phys. Rev. B 106, 165101</em></div>
+  </div>
+  <div class="entry">
+    <div class="year">2021</div>
+    <div>D. Zavickis, G. Zvejnieks, A. Chesnokov, D. Gryaznov, &ldquo;Single oxygen vacancy in BaCoO<sub>3</sub>: hybrid DFT calculations and local site symmetry approach.&rdquo;</div>
+  </div>
+  <div class="entry">
+    <div class="year">2021</div>
+    <div>G. Zvejnieks, D. Zavickis, D. Grjaznovs, J. Kotomins, &ldquo;BaCoO<sub>3</sub> monoclinic structure and chemical bonding analysis; hybrid DFT calculations,&rdquo; <em>Physical Chemistry Chemical Physics</em></div>
+  </div>
+
+  <h2>Presentations</h2>
+
+  <div class="entry">
+    <div class="year">Aug 2022</div>
+    <div><strong>Psi-k 2022</strong> (EPFL, Lausanne) &mdash; D. Zavickis, K. Kacars, J. Cimurs, A. Gulans, &ldquo;Adaptively compressed exchange in LAPW&rdquo;</div>
+  </div>
+  <div class="entry">
+    <div class="year">Feb 2021</div>
+    <div><strong>37th Scientific Conference of ISSP UL</strong> &mdash; D. Zavickis, G. Zvejnieks, D. Grjaznovs, E.A. Kotomins, &ldquo;Co jona magnētiskā stāvokļa un lokālās apkārnes raksturošana BaCoO<sub>3-x</sub> perovskītā&rdquo;</div>
+  </div>
+  <div class="entry">
+    <div class="year">Oct 2020</div>
+    <div><strong>FM&amp;NT-2020</strong> (Vilnius, Lithuania) &mdash; D. Zavickis, G. Zvejnieks, D. Grjaznovs, E.A. Kotomins, &ldquo;Characterization of Co ion oxidation state and local structural distortions in BaCoO<sub>3-x</sub>&rdquo;</div>
+  </div>
+  <div class="entry">
+    <div class="year">Feb 2020</div>
+    <div><strong>36th Scientific Conference of ISSP UL</strong> &mdash; D. Zavickis, G. Zvejnieks, D. Grjaznovs, E.A. Kotomins, &ldquo;Co jona magnētiskā stāvokļa un lokālās apkārtnes raksturošana BaCoO<sub>3</sub> perovskītā ar skābekļa vakancēm&rdquo;</div>
+  </div>
+  <div class="entry">
+    <div class="year">May&ndash;Jun 2019</div>
+    <div><strong>Bunsentagung 2019</strong> (Jena, Germany) &mdash; G. Zvejnieks, D. Zavickis, D. Grjaznovs, E.A. Kotomins, &ldquo;The electronic structure of LaCoO<sub>3</sub> and BaCoO<sub>3</sub> perovskites&rdquo;</div>
+  </div>
+  <div class="entry">
+    <div class="year">Feb 2019</div>
+    <div><strong>35th Scientific Conference of ISSP UL</strong> &mdash; D. Zavickis, G. Zvejnieks, &ldquo;Fe un Co jonu magnētisko stāvokļu raksturošana (Ba,La)(Fe,Co)O<sub>3</sub> perovskītos&rdquo;</div>
+  </div>
+  <div class="entry">
+    <div class="year">Feb 2018</div>
+    <div><strong>34th Scientific Conference of ISSP UL</strong> &mdash; D. Zavickis, G. Zvejnieks, &ldquo;Y<sub>2</sub>O<sub>3</sub> agregatizācijas pētījumi 2D dzelzs režģī: kinētiskā monte karlo modelēšana&rdquo;</div>
+  </div>
+
+  <h2>Projects &amp; Grants</h2>
+
+  <div class="entry">
+    <div class="year">2021&ndash;now</div>
+    <div><strong>Novel Materials Design Centre of Excellence (NOMAD CoE)</strong><br>EU Horizon 2020 research &amp; innovation programme &mdash; grant agreement No. 951786</div>
+  </div>
+  <div class="entry">
+    <div class="year">2020</div>
+    <div><strong>Precise Fock Exchange (PREFEX)</strong><br>Latvian Council of Science &mdash; grant agreement LZP-2020/2-0251</div>
+  </div>
+  <div class="entry">
+    <div class="year">2018</div>
+    <div><strong>Theoretical prediction of new materials for intermediate-temperature ceramic fuel cells</strong><br>Latvian Council of Science &mdash; grant agreement LZP-2018/1-0147</div>
+  </div>
+
+  <h2>Teaching &amp; Outreach</h2>
+  <p>Alongside research, I have spent six years involved with the Latvian physics olympiad community &mdash; as team leader for the Latvian national team at the European and International Physics Olympiads, a member of the Academic Committee for the European and Nordic-Baltic Physics Olympiads, and an organiser of training sessions for Latvia&rsquo;s olympiad candidates. I have also trained Latvian high-school teachers in using ARANET sensor systems in the classroom.</p>
+
+  <h2>Skills &amp; Languages</h2>
+  <p class="compact">Python &middot; MATLAB/Simulink &middot; Fortran &middot; R &middot; HPC (MPI, OpenMP) &middot; Bash &middot; SQL</p>
+  <p class="compact">Latvian (native) &middot; English (B2) &middot; German (B1) &middot; Swedish (A1)</p>
+
+</main>
 </body>
 </html>

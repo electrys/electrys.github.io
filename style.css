@@ -102,6 +102,113 @@ a.meta-item:hover {
   border-bottom-color: var(--text);
 }
 
+.experience {
+  margin-top: 4px;
+}
+
+.exp-item {
+  border-bottom: 1px solid rgba(107, 107, 107, 0.18);
+}
+
+.exp-item:first-child {
+  border-top: 1px solid rgba(107, 107, 107, 0.18);
+}
+
+.exp-summary {
+  list-style: none;
+  cursor: pointer;
+  display: block;
+  padding: 15px 2px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.exp-summary::-webkit-details-marker {
+  display: none;
+}
+
+.exp-summary:hover {
+  background: rgba(47, 93, 98, 0.05);
+}
+
+.exp-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.exp-summary-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.exp-title {
+  font-weight: 600;
+  font-size: 15.5px;
+}
+
+.exp-org {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.exp-summary-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.exp-dates {
+  color: var(--muted);
+  font-size: 13.5px;
+  white-space: nowrap;
+}
+
+.chevron {
+  width: 8px;
+  height: 8px;
+  border-right: 1.6px solid var(--muted);
+  border-bottom: 1.6px solid var(--muted);
+  transform: rotate(-45deg);
+  transition: transform 0.15s ease;
+}
+
+details[open] .chevron {
+  transform: rotate(45deg);
+}
+
+.exp-detail {
+  padding: 0 2px 18px 2px;
+}
+
+.exp-detail ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.exp-detail li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.exp-detail li::before {
+  content: "\2013";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+.exp-detail li:last-child {
+  margin-bottom: 0;
+}
+
 .entry {
   display: grid;
   grid-template-columns: 96px 1fr;
@@ -120,5 +227,14 @@ a.meta-item:hover {
 @media (max-width: 480px) {
   .entry {
     grid-template-columns: 72px 1fr;
+  }
+
+  .exp-summary-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .exp-summary-right {
+    padding-top: 0;
   }
 }
